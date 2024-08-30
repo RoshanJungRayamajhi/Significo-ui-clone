@@ -2,6 +2,16 @@
   background-color: var(--salmon);
 }
 
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('fonts/font.ttf')
+}
+@font-face {
+  font-family: 'satoshi-variable';
+  src: url('fonts/satoshi-Variable.ttf')
+}
+
+
 * {
   margin: 0;
   padding: 0;
