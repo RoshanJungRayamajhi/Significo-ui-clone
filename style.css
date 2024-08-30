@@ -1,0 +1,56 @@
+*::selection {
+  background-color: var(--salmon);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+:root {
+  --black: #000;
+  --salmon: #ef9d71;
+  --white: #ffff;
+  --cyan: #80becc;
+  --dsalmon: #000000;
+  --dcyan: #2b3c3f;
+}
+body {
+  transition: background-color ease-out 0.5s;
+}
+.vidodiv {
+  clip-path: circle(var(--clip) at 50% 48%);
+}
+
+body[theme="black"] {
+  background-color: black;
+}
+body[theme="black"] .section {
+  color: var(--white);
+}
+body[theme="cyan"] {
+  background-color: var(--cyan);
+}
+body[theme="cyan"] .section {
+  color: var(--dcyan);
+}
+body[theme="salmon"] {
+  background-color: var(--salmon);
+}
+body[theme="salmon"] .section {
+  color: var(--dsalmon);
+}
+body[theme="white"] {
+  background-color: var(--white);
+}
+body[theme="white"] .section {
+  color: var(--black);
+}
